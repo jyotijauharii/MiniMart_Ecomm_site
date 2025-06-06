@@ -1,0 +1,97 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+*{margin: 0px; padding:0px;}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body{font-family: "Lato", sans-serif; font-size:14pX;}
+
+.bg-yellow{background:rgb(255, 160, 52);}
+
+@media (min-width:1500px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl{max-width: 1800px;
+  }
+}
+
+.headerWrapper .top-strip{padding: 8px 0px; }
+.headerWrapper .top-strip {color:white; font-size: 12px; font-weight: 400; ;}
+
+.headerWrapper .header{width: 100%; height: auto; padding:5px 0px; }
+.logoWrapper img {width:100%; height:100px}
+
+.headerWrapper .header .part-2 .countryDrop{ width: 170px; height: 60px; min-width: 170px; color :#000 !important; border-radius: 10px  !important ; border: 1px solid rgba(0,0,0,0.1) !important; padding: 10px 15px !important;}
+.countryDrop .d-flex{border:1px solid rgb(0,0,0,0.1); background-color: rgb(255, 255, 255); padding:0px 20px; border-radius: 10px;}
+
+ .countryDrop .label{font-size: 14px !important; text-transform: capitalize !important; color: rgba(0,0,0,0.8) !important; line-height: 16px !important; }
+
+ .countryDrop .name{font-size: 14px !important; text-transform: capitalize !important; color: rgba(87, 0, 0, 0.8) !important; font-weight: 800; line-height:16px;}
+
+
+ .countryDrop .span .ml-auto svg{opacity: 0.7; }
+
+header .headerSearch{ width:60%; height: 60px; background:rgb(248, 242, 242); padding : 10px; position:relative !important; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1);}
+
+header .headerSearch input{width:85%; height:30px !important; background:transparent !important; outline: none !important; font-size:14px !important; color:black !important; border:0px !important; padding:0px 20px !important}
+
+header .headerSearch Button{position: absolute; top: 10px; right:15px; z-index:100; min-width:40px !important; height:40px !important; width:40px !important; border-radius: 50% !important; border-color: #000;}
+
+header .headerSearch Button svg{font-size: 25px; color:rgb(0, 51, 0)}
+header .part-3{padding :10px;}
+
+header .part-3 .user{ align-items: center; justify-content: center; min-width:50px; height: 50px !important; width:50px !important; background-color: rgb(245, 245, 245); border-radius: 50% !important; border: 1px solid rgba(0,0,0,0.1);}
+
+header .part-3 .user svg{font-size: 20px;}
+.cartTab .price{ color:#000 !important; font-size: 16px; font-weight: 400; padding-left: 20px; padding-right: 20px; padding-top:10px;}
+.cartTab button{background: aliceblue !important;}
+.cartTab button svg{color: red !important;}
+.cartTab .count{position: absolute; top: -6px; right: -4px; background: red; border-radius: 50%; color: aliceblue; width: 20px; height: 20px;} 
+
+nav .allCatTab{  border-radius: 10px; border: 1px solid rgba(0,0,0,0.1); color: black; font-weight: 300;padding:0px 0px; margin-top: 5px; width:100%}
+
+nav .allCatTab:hover{background:rgb(255, 240, 240)}
+nav .allCatTab .icon1 svg{font-size: 20px !important; } 
+
+nav .nav-part-2 ul{margin-bottom: 0px;justify-content: center; margin-top: 10px; display: flex; padding-left: 300px;}
+
+nav .nav-part-2 ul li a{font-size:14spx; font-weight: 300; text-decoration: none; text-transform: uppercase; color:rgb(0,0,0,0.8); padding: 10px 15px;float: left; border-radius: 10px;}
+
+nav .nav-part-2 ul li a:hover{ color:black; background-color: rgb(250, 171, 81) ; border: 1px solid rgb(0,0,0,0.2) }
