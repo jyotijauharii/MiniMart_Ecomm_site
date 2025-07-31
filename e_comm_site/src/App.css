@@ -42,39 +42,57 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+);
 
 body{font-family: "Lato", sans-serif; font-size:14pX;}
 
 .bg-yellow{background:rgb(255, 160, 52);}
 
-@media (min-width:1500px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl{max-width: 1800px;
+@media (min-width:1300px){
+   .container,.container-lg, .container-md, .container-sm, .container-xl{max-width: 1200px;
   }
+  
 }
 
-.headerWrapper .top-strip{padding: 8px 0px; }
-.headerWrapper .top-strip {color:white; font-size: 12px; font-weight: 400; ;}
+@media (min-width:1300px){
+   .container,.container-lg, .container-md, .container-sm, .container-xl{max-width: 1200px;
+  }
+  
+}
+.cursor{cursor:pointer}
+/* .text-light{color:#000 !important; background-color: rgb(218, 218, 218);} */
+.text-sml{font-size: 14px;}
 
-.headerWrapper .header{width: 100%; height: auto; padding:5px 0px; }
+::-webKit-scrollbar{width:8px !important; height:8px !important;}
+::-webKit-scrollbar-thumb{background:#ccc !important;}
+::-webKit-scrollbar-track{background: transparent !important}
+
+.root{border:1px solid rgba(0,0,0,0.1);}
+.headerWrapper .top-strip{padding: 8px 0px;}
+.headerWrapper .top-strip {color:white; font-size: 12px; font-weight: 400;}
+
+.headerWrapper .header{width: 100%; height: auto; padding:25px 0px; }
 .logoWrapper img {width:100%; height:100px}
 
 .headerWrapper .header .part-2 .countryDrop{ width: 170px; height: 60px; min-width: 170px; color :#000 !important; border-radius: 10px  !important ; border: 1px solid rgba(0,0,0,0.1) !important; padding: 10px 15px !important;}
-.countryDrop .d-flex{border:1px solid rgb(0,0,0,0.1); background-color: rgb(255, 255, 255); padding:0px 20px; border-radius: 10px;}
+.countryDrop .d-flex{border:1px solid rgb(0,0,0,0.1); background-color: rgb(255, 255, 255); padding:0px 10px; border-radius: 10px;}
 
- .countryDrop .label{font-size: 14px !important; text-transform: capitalize !important; color: rgba(0,0,0,0.8) !important; line-height: 16px !important; }
+ .countryDrop .label{font-size: 18px !important; text-transform: capitalize !important; color: rgba(0,0,0,0.8) !important; line-height: 16px !important; }
 
- .countryDrop .name{font-size: 14px !important; text-transform: capitalize !important; color: rgba(87, 0, 0, 0.8) !important; font-weight: 800; line-height:16px;}
+ .countryDrop .name{font-size: 18px !important; text-transform: capitalize !important; color: rgba(87, 0, 0, 0.8) !important; font-weight: 800; line-height:16px;}
 
 
  .countryDrop .span .ml-auto svg{opacity: 0.7; }
 
-header .headerSearch{ width:60%; height: 60px; background:rgb(248, 242, 242); padding : 10px; position:relative !important; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1);}
+ .headerSearch{ width:60%; height: 60px; background:rgb(248, 242, 242); padding : 10px; position:relative !important; border-radius: 10px; border: 1px solid rgba(0,0,0,0.1);}
 
-header .headerSearch input{width:85%; height:30px !important; background:transparent !important; outline: none !important; font-size:14px !important; color:black !important; border:0px !important; padding:0px 20px !important}
+ .headerSearch input{width:85%; height:30px !important; background:transparent !important; outline: none !important; font-size:18px !important; color:black !important; border:0px !important; padding:0px 20px !important}
 
-header .headerSearch Button{position: absolute; top: 10px; right:15px; z-index:100; min-width:40px !important; height:40px !important; width:40px !important; border-radius: 50% !important; border-color: #000;}
+ .headerSearch Button{position: absolute; top: 10px; right:15px; z-index:100; min-width:40px !important; height:40px !important; width:40px !important; border-radius: 50% !important; border-color: #000;}
 
-header .headerSearch Button svg{font-size: 25px; color:rgb(0, 51, 0)}
+ .headerSearch Button svg{font-size: 25px; color:rgb(0, 51, 0)}
 header .part-3{padding :10px;}
 
 header .part-3 .user{ align-items: center; justify-content: center; min-width:50px; height: 50px !important; width:50px !important; background-color: rgb(245, 245, 245); border-radius: 50% !important; border: 1px solid rgba(0,0,0,0.1);}
@@ -85,13 +103,111 @@ header .part-3 .user svg{font-size: 20px;}
 .cartTab button svg{color: red !important;}
 .cartTab .count{position: absolute; top: -6px; right: -4px; background: red; border-radius: 50%; color: aliceblue; width: 20px; height: 20px;} 
 
-nav .allCatTab{  border-radius: 10px; border: 1px solid rgba(0,0,0,0.1); color: black; font-weight: 300;padding:0px 0px; margin-top: 5px; width:100%}
+.locationModal .MuiPaper-elevation{ padding:35px;}
+/* .locationModal .headerSearch{width:100%} */
 
-nav .allCatTab:hover{background:rgb(255, 240, 240)}
-nav .allCatTab .icon1 svg{font-size: 20px !important; } 
+.locationModal .countryList{margin-bottom: 0px; max-height:400px; overflow-y: scroll; overflow-x: hidden;}
 
-nav .nav-part-2 ul{margin-bottom: 0px;justify-content: center; margin-top: 10px; display: flex; padding-left: 300px;}
+.locationModal .countryList li{ width:100% ;list-style: none; text-transform: capitalize !important; padding: 8px 0px;}
 
-nav .nav-part-2 ul li a{font-size:14spx; font-weight: 300; text-decoration: none; text-transform: uppercase; color:rgb(0,0,0,0.8); padding: 10px 15px;float: left; border-radius: 10px;}
+.locationModal .countryList li Button{width:100%;justify-content: flex-start; color:black;}
+.locationModal .countryList li Button:hover{background-color: blanchedalmond; }
 
-nav .nav-part-2 ul li a:hover{ color:black; background-color: rgb(250, 171, 81) ; border: 1px solid rgb(0,0,0,0.2) }
+.locationModal .close{position: absolute; top:20px; right:20px; min-width:40px; width:40px; height:50px;border-radius: 50%; color:blue; font-size:18px;}
+.locationModal .close svg{font-size: 22px;}
+
+/* nav .allCatTab{background:blue; padding:8px 3px !important; border-radius:30px !important;}
+
+nav .allCatTab *{color:rgb(230, 218, 218)}
+nav .allCatTab:hover{background:blue;} */
+/* nav{border: 1px solid rgba(0,0,0,0.1)} */
+nav .allCatTab .text{font-weight: 700; font-size:15px}
+
+nav .allCatTab{  border-radius: 10px; border: 1px solid rgba(128, 110, 110, 0.1); color: black; font-weight: 300;padding:0px 10px; margin-top: 20px; width:160px; height:60px; background-color: rgb(255, 184, 52);margin-left: 60px;}
+
+nav .allCatTab:hover{background:rgb(255, 240, 240); }
+nav .allCatTab .icon1 svg{font-size: 25px !important; } 
+
+
+nav .nav-part-1{max-width:10%; flex: 0 0 20%}
+nav .nav-part-2{max-width:80%; flex: 0 0 80%}
+
+nav .nav-part-1{float: left;}
+nav .nav-part-2{float: right;}
+
+/* nav .nav-part-1 .catWrapper{position: relative;}
+nav .nav-part-1 .catWrapper .sidebarNav{width:300px;height:auto;background:wheat; position:absolute;top:135%;left:0px; border:1px solid rgba(0,0,0,0.1); padding:15px 0px;}
+nav .nav-part-1 .catWrapper .sidebarNav ul li{width:100%; list-style:none;}
+nav .nav-part-1 .catWrapper .sidebarNav ul li Button{color:black; width:100%; justify-content: flex-start;} */
+
+nav .container{width:100%; margin-left:120px}
+nav .container .row .col-sm-2{width:20px;}
+
+nav .nav-part-2 ul{justify-content: center;  display: flex; padding-left: 100px; border:1px solid rgb(0,0,0,0.1); border-radius:10px; margin-left:100px; background-color: rgb(248, 242, 242); height:65px; margin-top:15px; }
+
+nav .nav-part-2 ul li a{text-decoration: none;}
+nav .nav-part-2 ul li a button{font-size:18px; font-weight: 400; text-decoration: none; text-transform: uppercase; color:rgb(0,0,0,0.8); border-radius: 30px; display:flex; align-items:center; padding:10px 20px;margin-top:5px}
+
+nav .nav-part-2 ul li button:hover{ color:black; background-color: rgb(255, 184, 52); border: 1px solid rgb(0,0,0,0.2); height:60px;}
+
+nav .nav-part-2 ul li{position:relative;}
+
+nav .nav-part-2 ul li .subMenu{position:absolute; top:150%;left:0px; min-width:100%;min-height: 30%; opacity: 0; ;  z-index: 10;background-color:rgb(246, 240, 229);width:20px;visibility:hidden;}
+
+nav .nav-part-2 ul li .subMenu a{display:block; width:100%; height:130%; padding: 5px;}
+
+nav .nav-part-2 ul li .subMenu Button:hover{background-color:gold;}
+
+nav .nav-part-2 ul li .subMenu a Button{width:100%;}
+
+nav .nav-part-2 ul li:hover .subMenu{opacity: 1; visibility:inherit; top:100%}
+
+.banner{height:60%;}
+.homeBannerSection{height:80%; z-index: 0;margin-bottom: 25px;}
+.homeBannerSection .item {  padding:10px; height:100%; border:1px solid rgba(0,0,0,0.1)}
+
+.homeProduct{padding:25px 0px; width:100%; height: 20px;}
+.homeProduct .banner{width:100%; border-radius: 7px; overflow:hidden;}
+
+.viewAllBtn{padding:8px 25px !important; background-color: aliceblue; border:1px solid rgba(0,0,0,0.1) !important; margin:30px !important; border-radius:30px !important; color: #000 !important;font-weight: 600; text-transform: capitalize;}
+
+.viewAllBtn svg{font-size: 20px;}
+.cartButton{border: 2px solid black;margin:0px;padding: 5px; width:60%;border-radius: 10px;background-color: #eeebeb;}
+.cartButton:hover{background-color:orange;color: black;}
+
+/* .product_row .item:hover{background-color:aliceblue;} */
+ .product_row .item:hover{box-shadow: 2px solid aquamarine;}
+ .productItem .arrows{background-color: #000; color:black}
+
+.productItem{float:left; padding:45px; width:100%; border:1px solid rgba(0,0,0,0.1); cursor: pointer; position:relative;}
+
+.productItem .info .oldPrice{font-size:20px; font-weight: bold; color:rgba(0,0,0,0.4); text-decoration: line-through;}
+
+.productItem .info .netPrice{font-size:20px; font-weight: bold;}
+
+.productItem .badge {display:inline-Block; padding: 7px 10px; position:absolute; top:10px; left:10px; z-index:100; font-size: 20px;}
+
+.badge-primary{background:rgb(246, 173, 37) ; color:black !important;}
+
+.productItem .actions{position:absolute; top:20px; right:109%; z-index:100;width:20px; height:30px; gap:10px; display:flex; flex-direction: column;}
+
+.productItem .actions Button{display:flex; align-items:center;font-size:25px;justify-content: center; min-width:40px; height:40px;width:30px; border-radius: 50%; box-shadow:0 1px 3px rgb(0 0 0 / 15%); }
+
+/* .productItem .actions Button:hover{background-color: orange;} */
+
+.productItem .actions Button svg{color:black;opacity: 0.8; pointer-events: none; font-size: 18px;}
+.productItem .actions Button:hover svg{color:black}
+/* 
+.productItem .imgWrapper{overflow: hidden;}
+.productItem .imgWrapper:hover .actions{opacity:1; right:10px;} */
+.productItem .imgWrapper img{transition: all 0.3s ease-in-out;height:190px; padding:5px}
+.productItem .imgWrapper:hover img{transform: scale(1.1);}
+
+/* .homeCatSection{height:50%; margin-bottom: 25px; padding:35px 0px;width:100%; margin-left:10px;width:100% ;}
+.homeBannerSection  .settings .HomeCat_Item {  padding:10px; height:100%;} */
+
+.homeBannerSection .item {padding: 20px;border-radius: 30px;cursor: pointer;}
+.homeBannerSection .homeCatH1{text-align: center;padding-left: 20px;}
+.homeBannerSection .item .item_img{height:80px;}
+
+.Banner_cursor{width:30%; float: left;padding: 5px;height: 400px;margin:25px}

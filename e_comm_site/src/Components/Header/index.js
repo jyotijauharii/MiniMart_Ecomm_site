@@ -37,7 +37,7 @@ const Header = () => {
                             <div className=" d-flex align-items-center part-3  ml-auto">
                                 <Button className="user mr-4"> <FaUser /></Button>
                                 <div className="ml-auto cartTab d-flex align-item center">
-                                    <span className="price">     $2.33    </span>
+                                    <span className="price">$2.33</span>
                                     <div className="position-relative ml-4">
                                         <Button className='user'> <IoBagHandle /></Button>
                                         <span className="count d-flex align-item center justify-content-center">1 </span>
